@@ -1,8 +1,8 @@
 {
-    "name": "redux-wrapper",
-    "version": "1.0.0",
+    "name": "unified-redux-wrapper",
+    "version": "1.0.1",
     "description": "A wrapper around redux , used in conjuction with react to make incorporating state management in your applications easy as a breeze ",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
         "clean": "cross-env rm -rf build",
         "test": "jest",

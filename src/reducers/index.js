@@ -5,7 +5,7 @@ import { convertStringToCamelCase } from "../utils/strings";
 /**
  * @function updateReducersObject create an array of reducers from the actionDictionary
  */
-const updateReducersObject = (actionDictionary) => {
+const updateReducersObject = actionDictionary => {
     const mergedReducers = {};
     const objectDict = reducerObject(actionDictionary);
     Object.keys(objectDict).map(key => {
@@ -19,11 +19,9 @@ const updateReducersObject = (actionDictionary) => {
     return mergedReducers;
 };
 /**
- * Returns a combinecd reducer 
- * @param {Object} actionDictionary 
- * @param {reducerObject} otherReducers 
+ * Returns a combinecd reducer
+ * @param {Object} actionDictionary
+ * @param {reducerObject} otherReducers
  */
-const setUpCombinedReducers = (actionDictionary, otherReducers = {}) =>
+export const setUpCombinedReducers = (actionDictionary, otherReducers = {}) =>
     combineReducers({ otherReducers, ...updateReducersObject(actionDictionary) });
-
-export default setUpCombinedReducers
