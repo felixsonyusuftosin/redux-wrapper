@@ -22,6 +22,10 @@
         "redux-thunk": "^2.3.0",
         "url-search-params-polyfill": "^2.0.3"
     },
+    "bugs": {
+        "url": "https://github.com/felixsonyusuftosin/redux-wrapper/issues",
+        "email": "felixsonyusuftosin@gmail.com"
+    },
     "jest": {
         "setupFiles": [
             "<rootDir>/test-shim.js",
@@ -46,9 +50,15 @@
         "redux-wrapper",
         "one-store"
     ],
-    "collaborators": [
-        "Ikechkwu Njorku"
-    ],
+    "contributors": [{
+        "name": "Ikechkwu Njorku",
+        "email": "ikeenjoku@gmail.com",
+        "url": "https://github.com/ikenjoku"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/felixsonyusuftosin/redux-wrapper.git"
+    },
     "devDependencies": {
         "@babel/plugin-proposal-class-properties": "^7.3.0",
         "@babel/plugin-syntax-dynamic-import": "^7.2.0",
