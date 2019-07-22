@@ -2,21 +2,14 @@
     "name": "unified-redux-wrapper",
     "version": "1.1.3",
     "description": "A wrapper around redux , used in conjuction with react to make incorporating state management in your applications easy as a breeze ",
-    "main": "src/index.js",
+    "main": "index.js",
     "scripts": {
-        "clean": "cross-env rm -rf build",
         "test": "jest",
         "coverage": "jest --coverage",
         "test:watch": "jest --watch"
     },
     "dependencies": {
         "@types/humps": "^1.1.2",
-        "@types/jest": "^24.0.15",
-        "@types/jest-cli": "^23.6.0",
-        "@types/lodash": "^4.14.136",
-        "@types/moment": "^2.13.0",
-        "@types/react": "^16.8.23",
-        "@types/react-dom": "^16.8.4",
         "@types/react-redux": "^7.1.1",
         "@types/redux": "^3.6.0",
         "@types/redux-thunk": "^2.1.0",
@@ -24,12 +17,6 @@
         "babel-register": "^6.26.0",
         "cross-env": "^5.2.0",
         "humps": "^2.0.1",
-        "jest": "^24.8.0",
-        "jest-cli": "^24.8.0",
-        "lodash": "^4.17.11",
-        "moment": "^2.24.0",
-        "react": "^16.5.1",
-        "react-dom": "^16.8.6",
         "react-redux": "^5.1.1",
         "redux": "^3.7.2",
         "redux-thunk": "^2.3.0",
@@ -60,7 +47,7 @@
         "one-store"
     ],
     "collaborators": [
-        { "name": "Ikechkwu Njorku", "url": "https://github.com/ikenjoku" }
+        "Ikechkwu Njorku"
     ],
     "devDependencies": {
         "@babel/plugin-proposal-class-properties": "^7.3.0",
@@ -68,6 +55,10 @@
         "@babel/plugin-transform-runtime": "^7.2.0",
         "@babel/preset-env": "^7.3.1",
         "@babel/preset-react": "^7.0.0",
+        "@types/jest": "^24.0.15",
+        "@types/jest-cli": "^23.6.0",
+        "jest": "^24.8.0",
+        "jest-cli": "^24.8.0",
         "@types/node-fetch": "^2.3.7",
         "@types/redux-logger": "^3.0.7",
         "@types/sinon": "^7.0.6",
