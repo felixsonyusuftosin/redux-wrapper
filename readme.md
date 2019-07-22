@@ -27,8 +27,9 @@ The library solves the following problems when using redux
     MY_SECOND_ACTION: 'MY_SECOND_ACTION'
     }
 
+  You can update this file when you want to add more items to your store
 
-    - this key/values within the objects become camelized in your store so they can be accessed as
+  - this key/values within the objects become camelized in your store so they can be accessed as
 
 
     myFirstAction and mySecondAction
