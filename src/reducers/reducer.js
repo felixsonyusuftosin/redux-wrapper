@@ -1,53 +1,54 @@
 /**
- * @file define generic reducers 
+ * @file define generic reducers
  */
 
-// 
-import { setUpActions } from '../actions/setup.action';
+//
+import { setUpActions } from "../actions/setup.action";
 
-// initial default state 
+// initial default state
 const initialState = {
     pending: false,
     payload: null,
-    error: null
+    error: null,
 };
 
 /**
  * @function
- * @description returns reducers that represents the variables defined in the setUpActions Constants 
- * @return  { any } - return values 
+ * @description returns reducers that represents the variables defined in the setUpActions Constants
+ * @return  { any } - return values
  */
-export const reducerObject = (objectDictionary) => {
-    if (!objectDictionary) throw new Error(' You need to pass an object of your actions ')
+export const reducerObject = objectDictionary => {
+    if (!objectDictionary)
+        throw new Error(" You need to pass an object of your actions ");
     const reducers = {};
-    Object.keys(setUpActions(objectDictionary)).map((actionKey) => {
+    Object.keys(setUpActions(objectDictionary)).map(actionKey => {
         reducers[actionKey] = (state = initialState, action) => {
             switch (action.type) {
-                case setUpActions()[actionKey].request:
+                case setUpActions(objectDictionary)[actionKey].request:
                     {
                         return {
                             ...state,
                             pending: true,
                             payload: null,
-                            error: false
-                        }
+                            error: false,
+                        };
                     }
-                case setUpActions()[actionKey].recieve:
+                case setUpActions(objectDictionary)[actionKey].recieve:
                     {
                         return {
                             ...state,
                             pending: false,
                             payload: action.payload,
-                            error: false
+                            error: false,
                         };
                     }
-                case setUpActions()[actionKey].fail:
+                case setUpActions(objectDictionary)[actionKey].fail:
                     {
                         return {
                             ...state,
                             pending: false,
                             payload: null,
-                            error: action.payload
+                            error: action.payload,
                         };
                     }
                 default:

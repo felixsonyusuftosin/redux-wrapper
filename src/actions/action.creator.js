@@ -88,7 +88,7 @@ export const dispatchActions = (
             return actions.recieve(eventAction);
         }
     } else {
-        const actions = returnActionsAsync(actionDictionary, dictKey);
+        const actions = returnActionsAsync(dictKey, actionDictionary);
         return async dispatch => {
             dispatch(actions.request());
             const eventPromise = eventAction.apply(this, parameters);
