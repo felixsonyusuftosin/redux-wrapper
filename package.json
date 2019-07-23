@@ -1,6 +1,6 @@
 {
     "name": "unified-redux-wrapper",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "A wrapper around redux , used in conjuction with react to make incorporating state management in your applications easy as a breeze ",
     "main": "index.js",
     "scripts": {
