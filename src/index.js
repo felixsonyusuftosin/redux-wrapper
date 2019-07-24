@@ -3,8 +3,8 @@ require("babel-register")({
 });
 // Import the rest of our application.
 
-const { setUpCombinedReducers } = require("./src/reducers");
-const { dispatchActions } = require("./src/actions/action.creator");
+const { setUpCombinedReducers } = require("./reducers");
+const { dispatchActions } = require("./actions/action.creator");
 
 module.exports = {
     dispatchActions,
