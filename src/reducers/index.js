@@ -24,4 +24,4 @@ const updateReducersObject = actionDictionary => {
  * @param {reducerObject} otherReducers
  */
 export const setUpCombinedReducers = (actionDictionary, otherReducers = {}) =>
-    combineReducers({ otherReducers, ...updateReducersObject(actionDictionary) });
+    combineReducers({ ...otherReducers, ...updateReducersObject(actionDictionary) });
