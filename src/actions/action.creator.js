@@ -75,7 +75,7 @@ export const dispatchActions = (
     parameters = [],
     actionDictionary
 ) => {
-    if (!dictKey || !eventAction) {
+    if (!dictKey) {
         throw new Error(" !invalid request didnt pass in adequate parameters ");
     }
 
