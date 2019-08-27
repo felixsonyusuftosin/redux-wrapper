@@ -1,101 +1,101 @@
 {
-    "name": "unified-redux-wrapper",
-    "version": "1.2.8",
-    "description": "A wrapper around redux , used in conjuction with react to make incorporating state management in your applications easy as a breeze ",
-    "main": "build/index.js",
-    "scripts": {
-        "build": "rm -rf build && babel src -d build",
-        "test": "jest",
-        "coverage": "jest --coverage",
-        "test:watch": "jest --watch"
-    },
-    "dependencies": {
-        "@types/humps": "^1.1.2",
-        "@types/react-redux": "^7.1.1",
-        "@types/redux": "^3.6.0",
-        "@types/redux-thunk": "^2.1.0",
-        "babel-register": "^6.26.0",
-        "cross-env": "^5.2.0",
-        "humps": "^2.0.1",
-        "react-redux": "^5.1.1",
-        "redux": "^3.7.2",
-        "redux-thunk": "^2.3.0",
-        "url-search-params-polyfill": "^2.0.3"
-    },
-    "bugs": {
-        "url": "https://github.com/felixsonyusuftosin/redux-wrapper/issues",
-        "email": "felixsonyusuftosin@gmail.com"
-    },
-    "jest": {
-        "setupFiles": [
-            "<rootDir>/test-shim.js",
-            "<rootDir>/test-setup.js"
-        ],
-        "transform": {
-            "^.+\\.jsx?$": "babel-jest",
-            "\\.(jpg|jpeg|png|gif|eot|css|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileTransformer.js"
-        },
-        "moduleFileExtensions": [
-            "jsx",
-            "js",
-            "js.map",
-            "*.js",
-            "*.js.map"
-        ]
-    },
-    "keywords": [
-        "redux",
-        "unified-redux",
-        "react-redux",
-        "redux-wrapper",
-        "one-store"
-    ],
-    "contributors": [
-        {
-            "name": "Ikechkwu Njorku",
-            "email": "ikeenjoku@gmail.com",
-            "url": "https://github.com/ikenjoku"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/felixsonyusuftosin/redux-wrapper.git"
-    },
-    "devDependencies": {
-        "@babel/plugin-proposal-class-properties": "^7.3.0",
-        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-        "@babel/plugin-transform-runtime": "^7.2.0",
-        "@babel/preset-env": "^7.3.1",
-        "@babel/preset-react": "^7.0.0",
-        "@types/jest": "^24.0.15",
-        "@types/jest-cli": "^23.6.0",
-        "@types/node-fetch": "^2.3.7",
-        "@types/redux-logger": "^3.0.7",
-        "@types/sinon": "^7.0.6",
-        "babel-cli": "^6.26.0",
-        "babel-core": "^6.26.3",
-        "babel-loader": "^8.0.6",
-        "babel-plugin-import": "^1.11.0",
-        "babel-plugin-transform-async-to-generator": "^6.24.1",
-        "babel-plugin-transform-object-rest-spread": "^6.26.0",
-        "babel-plugin-transform-runtime": "^6.23.0",
-        "babel-polyfill": "^6.26.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-es2015": "^6.24.1",
-        "babel-preset-stage-0": "^6.24.1",
-        "enzyme": "^3.8.0",
-        "enzyme-adapter-react-16": "^1.9.1",
-        "enzyme-to-json": "^3.3.5",
-        "fetch-mock": "^7.3.1",
-        "identity-obj-proxy": "^3.0.0",
-        "jest": "^24.8.0",
-        "jest-cli": "^24.8.0",
-        "node-fetch": "^2.6.0",
-        "react-app-rewired": "^1.6.0",
-        "redux-logger": "^3.0.6",
-        "redux-mock-store": "^1.5.3",
-        "sinon": "^7.2.4"
-    },
-    "author": "Felixson Yusuf Tosin",
-    "license": "ISC"
+	"name": "unified-redux-wrapper",
+	"version": "1.2.9",
+	"description": "A wrapper around redux , used in conjuction with react to make incorporating state management in your applications easy as a breeze ",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "rm -rf build && babel src -d build",
+		"test": "jest",
+		"coverage": "jest --coverage",
+		"test:watch": "jest --watch"
+	},
+	"dependencies": {
+		"@types/humps": "^1.1.2",
+		"@types/react-redux": "^7.1.1",
+		"@types/redux": "^3.6.0",
+		"@types/redux-thunk": "^2.1.0",
+		"babel-register": "^6.26.0",
+		"cross-env": "^5.2.0",
+		"humps": "^2.0.1",
+		"react-redux": "^5.1.1",
+		"redux": "^3.7.2",
+		"redux-thunk": "^2.3.0",
+		"url-search-params-polyfill": "^2.0.3"
+	},
+	"bugs": {
+		"url": "https://github.com/felixsonyusuftosin/redux-wrapper/issues",
+		"email": "felixsonyusuftosin@gmail.com"
+	},
+	"jest": {
+		"setupFiles": [
+			"<rootDir>/test-shim.js",
+			"<rootDir>/test-setup.js"
+		],
+		"transform": {
+			"^.+\\.jsx?$": "babel-jest",
+			"\\.(jpg|jpeg|png|gif|eot|css|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileTransformer.js"
+		},
+		"moduleFileExtensions": [
+			"jsx",
+			"js",
+			"js.map",
+			"*.js",
+			"*.js.map"
+		]
+	},
+	"keywords": [
+		"redux",
+		"unified-redux",
+		"react-redux",
+		"redux-wrapper",
+		"one-store"
+	],
+	"contributors": [
+		{
+			"name": "Ikechukwu Njoku",
+			"email": "ikeenjoku@gmail.com",
+			"url": "https://github.com/ikenjoku"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/felixsonyusuftosin/redux-wrapper.git"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.3.0",
+		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+		"@babel/plugin-transform-runtime": "^7.2.0",
+		"@babel/preset-env": "^7.3.1",
+		"@babel/preset-react": "^7.0.0",
+		"@types/jest": "^24.0.15",
+		"@types/jest-cli": "^23.6.0",
+		"@types/node-fetch": "^2.3.7",
+		"@types/redux-logger": "^3.0.7",
+		"@types/sinon": "^7.0.6",
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-import": "^1.11.0",
+		"babel-plugin-transform-async-to-generator": "^6.24.1",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"enzyme": "^3.8.0",
+		"enzyme-adapter-react-16": "^1.9.1",
+		"enzyme-to-json": "^3.3.5",
+		"fetch-mock": "^7.3.1",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^24.8.0",
+		"jest-cli": "^24.8.0",
+		"node-fetch": "^2.6.0",
+		"react-app-rewired": "^1.6.0",
+		"redux-logger": "^3.0.6",
+		"redux-mock-store": "^1.5.3",
+		"sinon": "^7.2.4"
+	},
+	"author": "Felixson Yusuf Tosin",
+	"license": "ISC"
 }
