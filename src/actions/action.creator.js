@@ -22,21 +22,24 @@ export const returnActionsAsync = (actionDictionaryKey, actionDictionary) => {
       return {
         type: actionSet.request,
         fetching: true,
-        payload: null
+        payload: null,
+        error: false
       };
     },
     recieve(data) {
       return {
         type: actionSet.recieve,
         fetching: false,
-        payload: data
+        payload: data,
+        error: false
       };
     },
     fail(error) {
       return {
         type: actionSet.fail,
         fetching: false,
-        payload: error
+        payload: null,
+        error
       };
     }
   };
@@ -54,7 +57,8 @@ const returnActionsSync = (actionDictionaryKey, actionDictionary) => {
       return {
         type: `RECIEVE_${actionDictionaryKey}`,
         fetching: false,
-        payload: value
+        payload: value,
+        error: false
       };
     }
   };
