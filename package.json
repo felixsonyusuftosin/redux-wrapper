@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "humps": "^2.0.1",
-    "redux": "^3.7.2",
+    "redux": "^3.7.3",
     "redux-thunk": "^2.3.0"
   },
   "bugs": {
@@ -60,7 +60,6 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/polyfill": "7.7.0",
     "@babel/preset-env": "7.7.1",
-    "@babel/register": "7.7.0",
     "@types/jest": "24.0.15",
     "@types/jest-cli": "23.6.0",
     "@types/node-fetch": "^2.5.3",
