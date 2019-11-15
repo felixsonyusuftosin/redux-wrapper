@@ -82,10 +82,10 @@ export const dispatchActionSync = (
   }
   const actions = returnActionsSync(dictKey);
 
-  if (typeof eventAction === "function") {
-    return actions.recieve(eventAction.apply(this, parameters));
+  if (typeof values === "function") {
+    return actions.recieve(values.apply(this, parameters));
   } else {
-    return actions.recieve(eventAction);
+    return actions.recieve(values);
   }
 };
 
